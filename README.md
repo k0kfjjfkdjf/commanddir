@@ -38,7 +38,7 @@ npm run check    # проверка данных и перекрёстных с�
 ## Сборка
 
 - **GitHub Pages** — `.github/workflows/pages.yml` при каждом пуше в `main` (Settings → Pages → Source: *GitHub Actions*).
-- **Android APK** — `.github/workflows/android.yml` оборачивает `www/` в Capacitor и собирает APK. Тег `v*` (`git tag v1.0.0 && git push --tags`) публикует APK в Releases.
+- **Android APK** — `.github/workflows/android.yml` оборачивает `www/` в Capacitor и собирает APK. Каждый пуш в `main` публикует APK в Releases (`v1.0.<номер сборки>`); тег `v*` — релиз с этим именем.
 - **iPhone** — через Safari: «Поделиться → На экран „Домой“».
 
 ## Лицензия
